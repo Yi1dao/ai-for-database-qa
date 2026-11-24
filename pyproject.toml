@@ -1,0 +1,20 @@
+[project]
+name = "my-chatbi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yidao", email = "yidao0925@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.5.1",
+    "dotenv>=0.9.9",
+    "langchain>=1.5.2",
+    "langchain-openai>=1.8.5",
+]
+
+[project.scripts]
+my-chatbi = "my_chatbi:main"
+
+
