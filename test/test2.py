@@ -140,11 +140,5 @@ def run(question: str) -> None:
 
 
 if __name__ == "__main__":
-    questions = [
-        "查询已完成订单的总数量",
-        "按产品线统计总收入",
-        "欧洲市场最近三个月的销售数量是多少",
-        "各产品线的毛利率是多少",
-    ]
-    for q in questions:
-        run(q)
+    questions = "欧洲市场最近三个月的销售数量是多少",
+    run(questions)
