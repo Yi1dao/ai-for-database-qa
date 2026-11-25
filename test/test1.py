@@ -31,7 +31,7 @@ def generate_sql(query: str) -> str:
 
 
     prompt = ChatPromptTemplate.from_messages([
-        ("system","请根据用户提问的自然语言查询生成对应的 SQL 语句，要求：请使用标准的 SQL 语法，并确保生成的 SQL 语句是正确的，直接输出SQL语句。"),
+        ("system","请根据用户提问的自然语言查询生成对应的 SQL 语句，要求：请使用标准的 SQL 语法，并直接输出SQL语句不做解释，并确保生成的 SQL 语句是正确的"),
         ("human","{query}")
     ])
 
